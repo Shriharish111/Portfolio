@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta n
+  <title>Shri Harish | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!-- ================= NAVBAR ================= -->
+ <header>
+  <nav id="site-nav">
+    <div class="logo">SH</div>
+
+    <ul id="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#hire">Hire Me</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+</header>
+
+
+
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero">
+    <h1>Hi, I’m <span class="name">Shri Harish</span></h1>
+    <p class="hero-tagline"><span id="typing"></span></p>
+    <a href="#projects" class="btn">🎮 View My Work</a>
+  </section>
+
+<!-- ================= ABOUT ME ================= -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about-container">
+    <div class="about-text">
+      <p>
+        I’m a final-year <strong>CSE (AI & ML)</strong> student who learns best by building.  
+        I enjoy experimenting with <strong>game development</strong> and exploring how AI can make technology feel more human.  
+        <br><br>
+        I see myself as a <strong>curious learner</strong> who takes small steps, improves steadily, and adapts.  
+        <br><br>
+        When I’m not coding or prototyping, I play and analyze games to study their design and mechanics — fueling my dream of growing <strong>The W1 Games</strong> into a studio that builds unique experiences.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= SKILLS ================= -->
+<section id="skills">
+  <h2>Skills & Tools</h2>
+
+  <div class="skill-tree">
+    <div class="skill-branch">
+      <h3>⚔️ Programming</h3>
+      <ul>
+        <li>Python <span class="level">Lv. 10</span></li>
+        <li>C++ <span class="level">Lv. 9</span></li>
+      </ul>
+    </div>
+
+    <div class="skill-branch">
+      <h3>🎮 Game Development</h3>
+      <ul>
+        <li>Unreal Engine <span class="level">Lv. 9</span></li>
+        <li>Cascadeur <span class="level">Lv. 7</span></li>
+        <li>Blender <span class="level">Lv. 8</span></li>
+      </ul>
+    </div>
+
+    <div class="skill-branch">
+      <h3>🤖 AI / ML</h3>
+      <ul>
+        <li>ML Basics <span class="level">Lv. 8</span></li>
+        <li>TensorFlow <span class="level">Lv. 6</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+  
+ <!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-list">
+
+    <div class="project-card locked" onclick="unlockProject(this)">
+      <div class="card-content">
+        <h3>🎮 LannyDark Shooter</h3>
+        <p class="hidden">LAN multiplayer shooter in Unreal Engine 5 with player movement, HUD, shooting loop, and LAN sessions.</p>
+        <a href="https://github.com/Shriharish111" target="_blank" class="btn hidden">🔗 View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card locked" onclick="unlockProject(this)">
+      <div class="card-content">
+        <h3>🏃 Endless Surfer</h3>
+        <p class="hidden">A fun endless running game prototype with obstacle mechanics.</p>
+        <a href="https://github.com/Shriharish111" target="_blank" class="btn hidden">🔗 View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card locked" onclick="unlockProject(this)">
+      <div class="card-content">
+        <h3>🌦️ Clima Health</h3>
+        <p class="hidden">Weather-based health suggestion system.</p>
+        <a href="https://github.com/Shriharish111" target="_blank" class="btn hidden">🔗 View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card locked" onclick="unlockProject(this)">
+      <div class="card-content">
+        <h3>💻 PC Recommendation System</h3>
+        <p class="hidden">AI-based system to recommend optimal PC builds tailored to user needs.</p>
+        <a href="https://github.com/Shriharish111" target="_blank" class="btn hidden">🔗 View on GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery">
+  <h2>Gallery</h2>
+
+<!-- === PROJECTS (AI + Game) === -->
+<h3>💡 Projects</h3>
+<div class="gallery-carousel">
+  <div class="slide-track">
+    <!-- Original set -->
+    <img src="assets/projects/HighresScreenshot00003.png" alt="Game Project Screenshot 1">
+    <img src="assets/projects/HighresScreenshot00004.png" alt="Game Project Screenshot 2">
+    <img src="assets/projects/HighresScreenshot00006.png" alt="Game Project Screenshot 3">
+    <img src="assets/projects/HighresScreenshot00006awse.png" alt="Game Project Screenshot 4">
+    <img src="assets/projects/HighresScreenshot00007.png" alt="Game Project Screenshot 5">
+    <img src="assets/projects/HighresScreenshot00008.png" alt="Game Project Screenshot 6">
+
+    <video controls muted loop>
+      <source src="assets/projects/ProjectLannyDark%20-%20Unreal%20Editor%202025-08-31%2019-48-07.mp4" type="video/mp4">
+    </video>
+    <video controls muted loop>
+      <source src="assets/projects/Document 6246849560585443314.mp4" type="video/mp4">
+    </video>
+    <video controls muted loop>
+      <source src="assets/projects/LyraImp%20-%20Unreal%20Editor%202025-04-06%2022-08-44.mp4" type="video/mp4">
+    </video>
+    <video controls muted loop>
+      <source src="assets/projects/slashg%20-%20Unreal%20Editor%202024-09-01%2012-38-00(1).mp4" type="video/mp4">
+    </video>
+
+    <!-- Duplicate set for infinite loop -->
+    <img src="assets/projects/HighresScreenshot00003.png" alt="Game Project Screenshot 1">
+    <img src="assets/projects/HighresScreenshot00004.png" alt="Game Project Screenshot 2">
+    <img src="assets/projects/HighresScreenshot00006.png" alt="Game Project Screenshot 3">
+    <img src="assets/projects/HighresScreenshot00006awse.png" alt="Game Project Screenshot 4">
+    <img src="assets/projects/HighresScreenshot00007.png" alt="Game Project Screenshot 5">
+    <img src="assets/projects/HighresScreenshot00008.png" alt="Game Project Screenshot 6">
+
+    <video controls muted loop>
+      <source src="assets/projects/ProjectLannyDark%20-%20Unreal%20Editor%202025-08-31%2019-48-07.mp4" type="video/mp4">
+    </video>
+    <video controls muted loop>
+      <source src="assets/projects/document_6246849560585443314.mp4" type="video/mp4">
+    </video>
+    <video controls muted loop>
+      <source src="assets/projects/LyraImp%20-%20Unreal%20Editor%202025-04-06%2022-08-44.mp4" type="video/mp4">
+    </video>
+    <video controls muted loop>
+      <source src="assets/projects/slashg%20-%20Unreal%20Editor%202024-09-01%2012-38-00.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+
+  <!-- === VIRTUAL PHOTOGRAPHY === -->
+<h3>📸 Virtual Photography</h3>
+<div class="gallery-carousel">
+  <div class="slide-track">
+    <!-- Original set -->
+    <img src="images/gallery/Assassin_s Creed Mirage 2_2_2025 3_40_01 PM.png" alt="Assassin's Creed Mirage">
+    <img src="images/gallery/Bioshock 7_22_2025 12_44_46 PM.png" alt="Bioshock">
+    <img src="images/gallery/Clair Obscur_ Expedition 33   7_9_2025 6_59_09 PM.png" alt="Clair Obscur">
+    <img src="images/gallery/Death Stranding 7_2_2025 10_14_53 PM.png" alt="Death Stranding">
+    <img src="images/gallery/Ghost of Tsushima DIRECTOR_S CUT v1053.7.0809.1937 7_26_2025 5_49_20 PM.png" alt="Ghost of Tsushima">
+    <img src="images/gallery/Hitman 7_27_2025 5_26_42 PM.png" alt="Hitman">
+    <img src="images/gallery/METAL GEAR RISING_ REVENGEANCE 7_25_2025 9_21_05 PM.png" alt="Metal Gear Rising">
+    <img src="images/gallery/Resident Evil 4 6_27_2025 12_04_58 AM.png" alt="Resident Evil 4">
+    <img src="images/gallery/Screenshot 7_2_2025 11_45_55 PM.png" alt="Screenshot 7">
+    <img src="images/gallery/screenshot_00002.png" alt="Screenshot 8">
+    <img src="images/gallery/ScreenShot-2025-7-25_19-44-33.png" alt="Screenshot 9">
+    <img src="images/gallery/ScreenShot-2025-7-27_0-14-2.png" alt="Screenshot 10">
+    <img src="images/gallery/METAL GEAR SOLID Δ_ SNAKE EATER   8_28_2025 5_50_54 PM.png" alt="Screenshot 11">
+    <img src="images/gallery/METAL GEAR SOLID Δ_ SNAKE EATER   8_28_2025 11_24_27 AM.png" alt="Screenshot 12">
+
+    <!-- Duplicate set for seamless infinite loop -->
+    <img src="images/gallery/Assassin_s Creed Mirage 2_2_2025 3_40_01 PM.png" alt="Assassin's Creed Mirage">
+    <img src="images/gallery/Bioshock 7_22_2025 12_44_46 PM.png" alt="Bioshock">
+    <img src="images/gallery/Clair Obscur_ Expedition 33   7_9_2025 6_59_09 PM.png" alt="Clair Obscur">
+    <img src="images/gallery/Death Stranding 7_2_2025 10_14_53 PM.png" alt="Death Stranding">
+    <img src="images/gallery/Ghost of Tsushima DIRECTOR_S CUT v1053.7.0809.1937 7_26_2025 5_49_20 PM.png" alt="Ghost of Tsushima">
+    <img src="images/gallery/Hitman 7_27_2025 5_26_42 PM.png" alt="Hitman">
+    <img src="images/gallery/METAL GEAR RISING_ REVENGEANCE 7_25_2025 9_21_05 PM.png" alt="Metal Gear Rising">
+    <img src="images/gallery/Resident Evil 4 6_27_2025 12_04_58 AM.png" alt="Resident Evil 4">
+    <img src="images/gallery/Screenshot 7_2_2025 11_45_55 PM.png" alt="Screenshot 7">
+    <img src="images/gallery/screenshot_00002.png" alt="Screenshot 8">
+    <img src="images/gallery/ScreenShot-2025-7-25_19-44-33.png" alt="Screenshot 9">
+    <img src="images/gallery/ScreenShot-2025-7-27_0-14-2.png" alt="Screenshot 10">
+    <img src="images/gallery/METAL GEAR SOLID Δ_ SNAKE EATER   8_28_2025 5_50_54 PM.png" alt="Screenshot 11">
+    <img src="images/gallery/METAL GEAR SOLID Δ_ SNAKE EATER   8_28_2025 11_24_27 AM.png" alt="Screenshot 12">
+  </div>
+</div>
+
+</section>
+
+
+
+
+<!-- ================= HIRE ME ================= -->
+<section id="hire">
+  <h2>Work With Me</h2>
+  <div class="hire-actions">
+    <button onclick="openResume()" class="hire-btn">📄 View Resume</button>
+    <a href="assets/resume.pdf" download class="hire-btn">⬇️ Download Resume</a>
+    <button onclick="scrollToContact()" class="hire-btn">💼 Hire Me</button>
+  </div>
+</section>
+
+<!-- ================= RESUME MODAL ================= -->
+<div id="resumeModal" class="resume-modal">
+  <div class="resume-content">
+    <span class="close-btn" onclick="closeResume()">&times;</span>
+    <iframe src="assets/resume.pdf" frameborder="0"></iframe>
+  </div>
+</div>
+
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="terminal">
+    <p class="type" data-text="> Email: " data-link="mailto:shriharish111@gmail.com" data-label="shriharish111@gmail.com"></p>
+    <p class="type" data-text="> Phone: +91 9344200207"></p>
+    <p class="type" data-text="> LinkedIn: " data-link="https://linkedin.com/in/shriharish111" data-label="linkedin.com/in/shriharish111"></p>
+    <p class="type" data-text="> GitHub: " data-link="https://github.com/Shriharish111" data-label="github.com/Shriharish111"></p>
+    <!-- This last empty line is for final cursor -->
+    <p class="end-line"></p>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+  <p>© 2025 Shri Harish | <strong>The W1 Games</strong></p>
+</footer>
+  <script>
+function openResume() {
+  document.getElementById("resumeModal").style.display = "flex";
+}
+
+function closeResume() {
+  document.getElementById("resumeModal").style.display = "none";
+}
+
+function scrollToContact() {
+  document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+}
+</script>
+
+  <script src="script.js"></script>
+
+  <script>
+  const nav = document.getElementById('site-nav');
+  const menuBtn = document.getElementById('menu-toggle');
+  const links = document.getElementById('nav-links');
+
+  function closeMenu() {
+    nav.classList.remove('open');
+    if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
+  }
+
+  function toggleMenu() {
+    nav.classList.toggle('open');
+    const expanded = nav.classList.contains('open');
+    menuBtn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+  }
+
+  if (menuBtn) menuBtn.addEventListener('click', toggleMenu);
+
+  // Close menu when a link is clicked (mobile)
+  links.addEventListener('click', (e) => {
+    if (e.target.tagName.toLowerCase() === 'a') closeMenu();
+  });
+
+  // Reset state on resize to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) closeMenu();
+  });
+</script>
+
+</body>
+</html>
